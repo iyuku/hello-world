@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Exercise19</title>
+  <style media="screen">
+    * {
+      font-family: sans-serif;
+    }
+    body {
+      margin: 0px;
+      background: rgb(244, 244, 244);
+    }
+    .header {
+      background: rgb(43, 43, 43);
+      color: #fff;
+      height: 80px;
+      padding: 0px 40px;
+      display: -webkit-flex;
+      display: flex;
+      -webkit-align-items: center;
+      align-items: center;
+      -webkit-justify-content: left;
+      justify-content: left;
+    }
+    .header_title {
+      margin: 0px;
+      padding: 0px 10px;
+    }
+    @media screen and (min-width: 1024px) {
+      .main {
+        width: 1024px;
+        margin: 0px auto;
+      }
+    }
+    @media screen and (max-width: 1024px) {
+      .main {
+        width: 750px;
+        margin: 0px auto;
+      }
+    }
+    .main_box {
+      background: rgb(255, 255, 255);
+      border: 1px rgb(212, 212, 212) solid;
+      border-radius: 5px;
+      margin: 10px 0px;
+      padding: 10px 30px;
+    }
+    .main_box h1{
+      font-size: 30px;
+      border-bottom: 1px rgb(212, 212, 212) solid;
+    }
+    .main_box h2{
+      font-size: 15px;
+      color: rgb(77, 77, 77);
+    }
+    .main_box p{
+      margin-bottom: 2em;
+      text-indent: 2em;
+      color: rgb(77, 77, 77);
+    }
+
+    /**/
+    /*Animation and Transform*/
+    @-webkit-keyframes menu {
+  		33% {
+  			background:url(https://img.grouponcdn.com/iam/hYKNivXdxd6pjtkdPtdy/bq-2048x1229/v1/c700x420.jpg);
+        background-size: cover;
+  		}
+  		66% {
+  			background:url(https://img.grouponcdn.com/deal/mJyn1PCrztjcL9q7ao99/Xn-2048x1229/v1/c700x420.jpg);
+        background-size: cover;
+  		}
+  		100% {
+        background: url(http://az616578.vo.msecnd.net/files/2016/05/27/635999646476505798-1665549773_SUSHI%20COVER.jpg);
+        background-size: cover;
+  		}
+    }
+    .animation {
+      width: 100%;
+      height: 500px;
+      -webkit-animation: menu 10s infinite;
+  		animation-name: menu;
+  		animation-duration: 10s;
+  		animation-iteration-count: infinite;
+      animation-direction: alternate;
+      animation-timing-function: ease-in-out;
+    }
+    .main_box_rice{
+      height: 200px;
+      display: -webkit-flex; /* Safari */
+      display: flex;
+      -webkit-flex-wrap: row; /* Safari */
+      flex-wrap:         row;
+      -webkit-justify-content: center; /* Safari */
+      justify-content:         center;
+      -webkit-align-items: center; /* Safari */
+      align-items:         center;
+    }
+    .rice {
+      margin: 5px 10px;
+      width: 150px;
+      height: 150px;
+      border-radius: 20px;
+      background: rgb(255, 216, 116);
+      text-align: center;
+      line-height: 150px;
+    }
+    .rice a {
+      text-decoration: none;
+      color: white;
+      text-shadow: 2px 2px 3px rgb(111, 111, 111);
+    }
+    #r1:hover {
+      -webkit-transform: rotate(6deg);
+      margin: 5px 10px;
+      width: 200px;
+      height: 200px;
+      border-radius: 20px;
+      background: url(http://www.japan-guide.com/g7/2043_rice.jpg);
+      background-size: cover;
+      text-align: center;
+      line-height: 200px;
+    }
+    #r2:hover {
+      -webkit-transform: rotate(6deg);
+      margin: 5px 10px;
+      width: 200px;
+      height: 200px;
+      border-radius: 20px;
+      background: url(http://www.japan-guide.com/g7/2043_genmai.jpg);
+      background-size: cover;
+      text-align: center;
+      line-height: 200px;
+    }
+    #r3:hover {
+      -webkit-transform: rotate(6deg);
+      margin: 5px 10px;
+      width: 200px;
+      height: 200px;
+      border-radius: 20px;
+      background: url(http://www.japan-guide.com/g7/2043_multigrain.jpg);
+      background-size: cover;
+      text-align: center;
+      line-height: 200px;
+    }
+    #r4:hover {
+      -webkit-transform: rotate(6deg);
+      margin: 5px 10px;
+      width: 200px;
+      height: 200px;
+      border-radius: 20px;
+      background: url(http://www.japan-guide.com/g7/2043_mochigome.jpg);
+      background-size: cover;
+      text-align: center;
+      line-height: 200px;
+    }
+
+  </style>
+</head>
+<body>
+  <header class="header">
+    <img src="https://devdojo.com/assets/img/sushi/pixelsushi4.png" alt="sushi" width="50px">
+    <h2 class="header_title">SUSHI HUB</h2>
+  </header>
+  <section class="main">
+    <article class="main_box">
+      <h1>What is Sushi?</h1>
+      <section class="animation"></section>
+      <p>
+         Sushi (すし, 寿司, 鮨) is the Japanese preparation and serving of specially prepared vinegared rice (鮨飯 sushi-meshi)
+        combined with varied ingredients (ネタ neta) such as chiefly seafood (often uncooked), vegetables,
+        and occasionally tropical fruits. Styles of sushi and its presentation vary widely,
+        but the key ingredient in all cases is the sushi rice, also referred to as shari (しゃり), or sumeshi (酢飯).
+      </p>
+    </article>
+    <article class="main_box">
+      <h1>How to order?</h1>
+      <p>To eat sushi, you must experience very intimidating process. So, I'd like to explain how to order it.</p>
+      <h2>Step 1 - Choosing a Restaurant</h2>
+      <p>Perhaps you have been invited to a Japanese restaurant for the first time, or perhaps you just want a new experience. Either way, the first step to trying sushi for the first time is finding someone to go with you. You should go with someone who knows a bit about sushi, since you don't want to worry about ordering or where to go. If you don't know anyone, just try to visit a moderately priced restaurant. Cheap sushi can have an overly fishy taste and bad texture. Make sure to ask questions, as the waitstaff at a nice Japanese restaurant will bend over backward to make sure you have a pleasant experience.</p>
+      <img src="map.png" alt="Google map" width="100%">
+      <h2>Step 2 - Sushi Etiquette</h2>
+      <p>As a first time sushi eater, make sure you are familiar with the etiquette. Most western sushi bars, are not expecting much for the typical sushi goer, but learning a little about the culture and what is expected will make the experience more enjoyable. <br>
+      For example, Never pass food to someone using chopsticks. This act parallels passing cremated bones of a deceased relative at a Japanese funeral. If you must share food, pass them the plate so that they can pick from it instead.</p>
+      <h2>Step 3 - What to Order</h2>
+      <p>Newbi sushi eaters generally start with maki, which is thin slices of fish and rice wrapped in seaweed. You should start out sharing a single roll, which comes with about six pieces, with a friend. The most popular maki in the United States is the California roll, which has a very rich taste and little or no raw fish. The Cucumber roll is very good as well, but also contains no fish. If you are willing to be adventurous, you should start with a Tuna roll, which is simply raw tuna, sushi rice, and seaweed. The taste of the seaweed and bittersweet taste of the rice will mostly overpower the tuna. Once you have tried maki, however, you should graduate to nigiri to have the true sushi experience.</p>
+      <h2>Step 4 - What the Waiter Brings You</h2>
+      <p>You may be given miso soup to start. If you've never tried it, it is likely that will not taste like anything you've had before. However, some people associate the taste of miso with the salty taste of home-canned green beans. Miso soup is strong, very salty, and slightly fishy. It should be stirred with your chopsticks and then drunk directly out of the bowl. However, most restaurants will provide you a spoon since most westerners feel drinking the soup out of the bowl is bad manners. Careful, it will be very hot. The ingredients of miso soup are pretty complex. The most unusual ingredient is in the broth, which contains some fish skin.</p>
+      <h2>Step 5 - Tips on eating nigiri</h2>
+      <p>Right before you eat nigiri (slabs of raw fish on rice), be prepared for what it will taste like. You should expect a fishy taste and a fleshy texture. Don't pretend you're eating something else, because that will ruin the experience and may cause you to gag.</p>
+    </article>
+    <article class="main_box">
+      <h1>What are the ways that grocery store sushi is different from serious sushi?</h1>
+      <p>The diffirences appear especially on Fish and Rice. You shold choose which sushi you will eat, referencing this article.</p>
+      <h2>Rice</h2>
+      <p>The rice is likely cooked with too much water, leading to an initial texture more akin to baby food. But after a few hours in a cold case, that roll will be dry as a bone. Moreover, Sushi rice should be served close to body temperature and kept slightly warm until being served. That's not happening in a grocery store.</p>
+      <div class="main_box_rice">
+        <div class="rice" id="r1"><a href="">White Rice</a></div>
+        <div class="rice" id="r2"><a href="">Brown Rice </a></div>
+        <div class="rice" id="r3"><a href="">Multigrain Rice</a></div>
+        <div class="rice" id="r4"><a href="">Glutinous Rice</a></div>
+      </div>
+      <h2>Fish</h2>
+      <p>Once a sushi chef's hands have cut and formed the fish over rice, the fish has been slightly warmed. Those few moments of handling greatly increase the flavor, a personal touch that your grocery case cannot provide.<br>
+      Most fish used in sushi these days is frozen at some point between the ocean and your mouth, but the technology varies widely. A well-frozen fish is dipped in liquid nitrogen and hits negative 65 degrees instantly, leaving the flesh and muscles perfectly intact. However, cheaper methods of freezing will lead to water crystallization that is going to degrade the overall flavor. The flip side of this is that when high end restaurants do get fresh, never-frozen fish, there is a greater chance that the fish will be carrying parasites. So in theory, grocery store sushi could actually be considered less of a health hazard.</p>
+    </article>
+  </section>
+</body>
+</html>
